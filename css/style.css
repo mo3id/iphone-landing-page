@@ -1,0 +1,181 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.container {
+   background-color: #000;
+   min-height: 100vh;
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   margin: auto;
+   padding: 20px 0;
+}
+
+.logo {
+   width: 40px;
+}
+
+ul li {
+   display: inline-block;
+}
+
+ul li a {
+   color: #fff;
+   text-decoration: none;
+   margin: 0 10px;
+}
+
+.content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 80%;
+   margin: auto;
+}
+
+.text {
+   width: 40%;
+   color: #fff;
+}
+
+.content h2 {
+   font-size: 40px;
+   text-transform: uppercase;
+}
+
+.content p {
+   font-size: 18px;
+   margin: 20px 0;
+}
+
+.text a {
+   text-decoration: none;
+   background-color: #fff;
+   color: #000;
+   padding: 8px 15px;
+   margin: 10px 0;
+   display: inline-block;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+   transition: .5s;
+   -webkit-transition: .5s;
+   -moz-transition: .5s;
+   -ms-transition: .5s;
+   -o-transition: .5s;
+}
+
+.images {
+   width: 30%;
+   text-align: right;
+}
+
+.images img {
+   width: 200px;
+}
+
+.icons {
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+}
+
+.icons img {
+   width: 50px;
+   transition: .5s;
+   -webkit-transition: .5s;
+   -moz-transition: .5s;
+   -ms-transition: .5s;
+   -o-transition: .5s;
+   cursor: pointer;
+}
+
+.icons img:hover,
+.text a:hover {
+   transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   -moz-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   -o-transform: scale(1.2);
+}
+
+.icon-iphon {
+   display: none;
+}
+
+@media screen and (max-width : 700px) {
+   .header {
+      width: 90%;
+   }
+
+   ul li a {
+      margin: 0 5px;
+   }
+
+   ul li:last-child{
+      display: none;
+   }
+
+   .content {
+      flex-direction: column;
+      width: 100%;
+      margin-top: 10%;
+   }
+
+   .text {
+      width: 90%;
+   }
+
+   .images {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      margin-top: 10%;
+      justify-content: space-between;
+   }
+
+   .images .img {
+      width: 170px;
+   }
+
+   .icons {
+      display: none;
+      width: 90%;
+      text-align: center;
+   }
+
+   .icon-iphon {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   .first-row ,
+   .sec-row {
+      display: flex;
+      justify-content: center;
+   }
+
+   .icon-iphon img {
+      width: 50px;
+   }
+}
+
+
